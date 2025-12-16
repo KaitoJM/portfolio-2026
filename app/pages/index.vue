@@ -105,9 +105,6 @@ import WorkExperienceVue from "~/components/WorkExperience.vue";
         </div>
       </div>
     </UPageSection>
-
-    <UPageSection> </UPageSection>
-
     <UPageSection>
       <template #header>
         <div class="flex flex-col items-center gap-4">
