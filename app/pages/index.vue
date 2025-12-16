@@ -8,12 +8,16 @@ import WorkExperienceVue from "~/components/WorkExperience.vue";
       <template #header>
         <img src="/avatar.png" alt="" class="mx-auto size-50 rounded-full" />
         <h1 class="font-bold text-3xl mt-4">Hi! I'm John</h1>
+        <p class="text-xs text-neutral-500 mt-2">
+          A dedicated software engineer specializing in web development since
+          2015
+        </p>
       </template>
       <template #body>
-        <p class="text-sm">
+        <p class="text-sm text-neutral-500">
           I'm currently working on my official portfolio.<br />
-          For now, Please have a look at this temporary porfolio made entirely
-          from Nuxt UI and Tailwind.
+          For now, Please have a look at this temporary site made entirely from
+          Nuxt UI and Tailwind.
         </p>
       </template>
     </UPageHero>
@@ -35,7 +39,7 @@ import WorkExperienceVue from "~/components/WorkExperience.vue";
           <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
             <UPageCard
               title="Capfrance Vacances"
-              description="booking website for a leading holiday network"
+              description="Built the project from the ground up using Laravel and Vue.js, serving as a full-stack developer throughout its development."
               orientation="vertical"
               spotlight
               spotlight-color="primary"
@@ -48,7 +52,7 @@ import WorkExperienceVue from "~/components/WorkExperience.vue";
             </UPageCard>
             <UPageCard
               title="NIPT Applications and API"
-              description="The primary use of this project for woman to book a reservation for their prenatal test in the Hiro Clinics based on Japan. Status and Lab results are then recorded and displayed on their pages."
+              description="Contributed to a multi-portal project by setting up the My Page application with Nuxt.js and developing a Laravel API migrated from CodeIgniter."
               orientation="vertical"
               spotlight
               spotlight-color="primary"
@@ -62,7 +66,7 @@ import WorkExperienceVue from "~/components/WorkExperience.vue";
             </UPageCard>
             <UPageCard
               title="Allworld Communications"
-              description="An ecommerce application built for a retailer of cellphone and laptop."
+              description="This project was built entirely on PrestaShop, leveraging its built-in e-commerce features. My responsibilities included developing the custom theme and implementing the front-end components."
               orientation="vertical"
               spotlight
               spotlight-color="primary"
@@ -75,7 +79,7 @@ import WorkExperienceVue from "~/components/WorkExperience.vue";
             </UPageCard>
             <UPageCard
               title="Xode"
-              description="An L1 blockchain platform with its own on-chain governance that aims to bring game development and businesses to Web3 and Polkadot."
+              description="This project was developed collaboratively by a team of developers. The main website is built using WordPress, while my contribution focused on the Blockscanner page, which was developed with Next.js and integrates Polkadot APIs to retrieve and display blockchain data."
               orientation="vertical"
               spotlight
               spotlight-color="primary"
@@ -86,8 +90,8 @@ import WorkExperienceVue from "~/components/WorkExperience.vue";
               </div>
             </UPageCard>
             <UPageCard
-              title="Multipay X"
-              description="A crypto payment and exchange solution built for Filipino MSMEs and traders—making it easy and secure to accept Bitcoin, Ethereum, Solana, Polkadot, and more."
+              title="Multipay X API"
+              description="Developed the project’s APIs using NestJS, consisting of three distinct APIs, each with its own specific responsibilities, working collaboratively to deliver the overall system functionality."
               orientation="vertical"
               spotlight
               spotlight-color="primary"
@@ -101,6 +105,8 @@ import WorkExperienceVue from "~/components/WorkExperience.vue";
         </div>
       </div>
     </UPageSection>
+
+    <UPageSection> </UPageSection>
 
     <UPageSection>
       <template #header>
@@ -117,7 +123,7 @@ import WorkExperienceVue from "~/components/WorkExperience.vue";
         </div>
       </template>
       <template #body>
-        <div class="flex gap-4 flex-wrap justify-center">
+        <div class="flex gap-4 flex-wrap justify-center mt-10">
           <img
             src="/skills/vue.png"
             class="w-40 h-30 object-contain bg-white p-2 rounded-lg"
