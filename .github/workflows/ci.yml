@@ -1,34 +1,44 @@
-name: ci
+name: Deploy Nuxt App
 
-on: push
+on:
+  push:
+    branches:
+      - main
 
 jobs:
-  ci:
-    runs-on: ${{ matrix.os }}
-
-    strategy:
-      matrix:
-        os: [ubuntu-latest]
-        node: [22]
+  deploy:
+    runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout
-        uses: actions/checkout@v6
+      - name: Checkout Code
+        uses: actions/checkout@v3
 
-      - name: Install pnpm
-        uses: pnpm/action-setup@v4
-
-      - name: Install node
-        uses: actions/setup-node@v6
+      - name: Setup Node
+        uses: actions/setup-node@v3
         with:
-          node-version: ${{ matrix.node }}
-          cache: pnpm
+          node-version: "24"
 
-      - name: Install dependencies
-        run: pnpm install
+      - name: Install PNPM Dependencies
+        run: |
+          npm install -g pnpm
+          pnpm install
 
-      - name: Lint
-        run: pnpm run lint
+      - name: Build Nuxt
+        run: |
+          NODE_OPTIONS="--max-old-space-size=4096" pnpm run build
 
-      - name: Typecheck
-        run: pnpm run typecheck
+      - name: Deploy to EC2
+        uses: appleboy/ssh-action@v0.1.6
+        with:
+          host: ${{ secrets.EC2_HOST }}
+          username: ec2-user
+          key: ${{ secrets.EC2_SSH_KEY }}
+          port: 22
+          script: |
+            cd /home/ec2-user/ecommerce-ui
+            git pull origin main
+            pnpm install
+            NODE_OPTIONS="--max-old-space-size=4096" pnpm run build
+            pm2 stop portfolio
+            pm2 delete portfolio
+            pm2 start --name portfolio "pnpm preview --host=0.0.0.0 --port=8084"
