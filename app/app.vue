@@ -1,7 +1,7 @@
 <script setup>
 useHead({
   meta: [{ name: "viewport", content: "width=device-width, initial-scale=1" }],
-  link: [{ rel: "icon", href: "/favicon.ico" }],
+  link: [{ rel: "icon", href: "/juanlogo.png" }],
   htmlAttrs: {
     lang: "en",
   },
@@ -58,10 +58,15 @@ useSeoMeta({
 
     <UFooter>
       <template #left>
-        <p class="text-sm text-muted">johnmarkmancol@gmail.com</p>
+        <img
+          src="/juanlogo.png"
+          alt=""
+          class="size-16 dark:invert dark:brightness-200 opacity-10"
+        />
       </template>
 
       <template #right>
+        <p class="text-sm text-muted mr-4">johnmarkmancol@gmail.com</p>
         <UButton
           to="https://pin.it/6pki3iUiZ"
           target="_blank"
