@@ -21,7 +21,7 @@ const links = ref<ButtonProps[]>([
     variant="soft"
   >
     <img
-      src="../../ecommerce.png"
+      src="/ecommerce.png"
       width="320"
       height="364"
       alt="Illustration"
