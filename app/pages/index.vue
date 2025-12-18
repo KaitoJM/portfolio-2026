@@ -36,7 +36,7 @@ import WorkExperienceVue from "~/components/WorkExperience.vue";
             Projects Collaborated<br />
             Through the Years
           </p>
-          <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+          <div class="grid xs:grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
             <UPageCard
               title="Capfrance Vacances"
               description="Built the project from the ground up using Laravel and Vue.js, serving as a full-stack developer throughout its development."
