@@ -18,6 +18,7 @@ const links = ref<ButtonProps[]>([
     description="A personal project build with Laravel 12 and Nuxt 4. This project is still in development."
     orientation="horizontal"
     :links="links"
+    variant="soft"
   >
     <img
       src="../../ecommerce.png"
