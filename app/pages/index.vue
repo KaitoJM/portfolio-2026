@@ -44,8 +44,12 @@ import WorkExperienceVue from "~/components/WorkExperience.vue";
               spotlight
               spotlight-color="primary"
             >
-              <img src="/capfrance.png" alt="Capfrance" class="w-full" />
-              <div class="flex flex-wrap gap-1 min-h-6">
+              <img
+                src="/capfrance.png"
+                alt="Capfrance"
+                class="rounded-lg w-full"
+              />
+              <div class="flex flex-wrap gap-1 h-fit">
                 <UBadge label="Vue2" variant="outline" />
                 <UBadge label="Laravel 9" variant="outline" />
               </div>
@@ -57,8 +61,8 @@ import WorkExperienceVue from "~/components/WorkExperience.vue";
               spotlight
               spotlight-color="primary"
             >
-              <img src="/nipt.png" alt="NIPT" class="w-full" />
-              <div class="flex flex-wrap gap-1 min-h-6">
+              <img src="/nipt.png" alt="NIPT" class="rounded-lg w-full" />
+              <div class="flex flex-wrap gap-1 h-fit">
                 <UBadge label="Vue2" variant="outline" />
                 <UBadge label="NuxtJS" variant="outline" />
                 <UBadge label="Laravel 10" variant="outline" />
@@ -71,8 +75,12 @@ import WorkExperienceVue from "~/components/WorkExperience.vue";
               spotlight
               spotlight-color="primary"
             >
-              <img src="/allworld.png" alt="Tailwind CSS" class="w-full" />
-              <div class="flex flex-wrap gap-1 min-h-6">
+              <img
+                src="/allworld.png"
+                alt="Tailwind CSS"
+                class="rounded-lg w-full"
+              />
+              <div class="flex flex-wrap gap-1 h-fit">
                 <UBadge label="Prestashop" variant="outline" />
                 <UBadge label="Smarty" variant="outline" />
               </div>
@@ -84,8 +92,12 @@ import WorkExperienceVue from "~/components/WorkExperience.vue";
               spotlight
               spotlight-color="primary"
             >
-              <img src="/xode.png" alt="Tailwind CSS" class="w-full" />
-              <div class="flex flex-wrap gap-1 min-h-6">
+              <img
+                src="/xode.png"
+                alt="Tailwind CSS"
+                class="rounded-lg w-full"
+              />
+              <div class="flex flex-wrap gap-1 h-fit">
                 <UBadge label="ReactJS" variant="outline" />
               </div>
             </UPageCard>
@@ -96,8 +108,12 @@ import WorkExperienceVue from "~/components/WorkExperience.vue";
               spotlight
               spotlight-color="primary"
             >
-              <img src="/multipay-x.png" alt="Tailwind CSS" class="w-full" />
-              <div class="flex flex-wrap gap-1 min-h-6">
+              <img
+                src="/multipay-x.png"
+                alt="Tailwind CSS"
+                class="rounded-lg w-full"
+              />
+              <div class="flex flex-wrap gap-1 h-fit">
                 <UBadge label="NestJS" variant="outline" />
               </div>
             </UPageCard>
