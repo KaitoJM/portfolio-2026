@@ -2,6 +2,13 @@
 useHead({
   meta: [{ name: "viewport", content: "width=device-width, initial-scale=1" }],
   link: [{ rel: "icon", href: "/juanlogo.png" }],
+  script: [
+    {
+      async: true,
+      src: "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9246995426022840",
+      crossorigin: "anonymous",
+    },
+  ],
   htmlAttrs: {
     lang: "en",
   },
