@@ -1,13 +1,13 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   ssr: true,
-  modules: ["@nuxt/eslint", "@nuxt/ui"],
+  modules: ["@nuxt/eslint", "@nuxt/ui", "@vercel/analytics"],
 
   runtimeConfig: {
     public: {
       bloggerApiKey: import.meta.env.API_KEY,
-      blogIds: import.meta.env.BLOG_IDS ?? import.meta.env.BLOG_ID ?? ""
-    }
+      blogIds: import.meta.env.BLOG_IDS ?? import.meta.env.BLOG_ID ?? "",
+    },
   },
 
   devtools: {
