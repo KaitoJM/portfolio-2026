@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import BlogsSection from "~/components/BlogsSection.vue";
 import FeaturedProject from "~/components/FeaturedProject.vue";
 import Projects from "~/components/Projects.vue";
 import WorkExperienceVue from "~/components/WorkExperience.vue";
@@ -44,6 +45,9 @@ import WorkExperienceVue from "~/components/WorkExperience.vue";
         </div>
       </div>
     </UPageSection>
+
+    <BlogsSection />
+
     <UPageSection>
       <template #header>
         <div class="flex flex-col items-center gap-4">
