@@ -11,16 +11,11 @@ import WorkExperienceVue from "~/components/WorkExperience.vue";
       <template #header>
         <img src="/avatar.png" alt="" class="mx-auto size-50 rounded-full" />
         <h1 class="font-bold text-3xl mt-4">Hi! I'm John</h1>
-        <p class="text-xs text-neutral-500 mt-2">
-          A dedicated software engineer specializing in web development since
-          2015
-        </p>
       </template>
       <template #body>
         <p class="text-sm text-neutral-500">
-          I'm currently working on my official portfolio.<br />
-          For now, Please have a look at this temporary site made entirely from
-          Nuxt UI and Tailwind.
+          A dedicated software engineer specializing in web development since
+          2015
         </p>
       </template>
     </UPageHero>

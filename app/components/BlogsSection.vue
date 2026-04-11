@@ -89,7 +89,7 @@ function mapFeedEntryToPost(entry: BloggerFeedEntry): BlogPost {
     title: entry.title?.$t ?? "Untitled Post",
     content: entry.content?.$t ?? "",
     url: alternateLink,
-    published: entry.published?.$t ?? new Date(0).toISOString()
+    published: entry.published?.$t ?? new Date(0).toISOString(),
   };
 }
 
@@ -99,25 +99,30 @@ async function fetchBlogPosts(blogId: string) {
     {
       query: {
         alt: "json",
-        "max-results": 10
-      }
-    }
+        "max-results": 10,
+      },
+    },
   );
 
   return (response.feed?.entry ?? []).map(mapFeedEntryToPost);
 }
 
-const { data, status, error } = await useAsyncData("blogs-section", async () => {
-  const blogIds = normalizeBlogIds(config.public.blogIds);
+const { data, status, error } = await useAsyncData(
+  "blogs-section",
+  async () => {
+    const blogIds = normalizeBlogIds(config.public.blogIds);
 
-  if (!blogIds.length) {
-    throw new Error("Missing blog IDs.");
-  }
+    if (!blogIds.length) {
+      throw new Error("Missing blog IDs.");
+    }
 
-  const blogEntries = await Promise.all(blogIds.map((blogId) => fetchBlogPosts(blogId)));
+    const blogEntries = await Promise.all(
+      blogIds.map((blogId) => fetchBlogPosts(blogId)),
+    );
 
-  return blogEntries.flat();
-});
+    return blogEntries.flat();
+  },
+);
 
 const posts = computed<BlogCard[]>(() => {
   const allPosts =
@@ -127,13 +132,14 @@ const posts = computed<BlogCard[]>(() => {
       description: getDescription(post.content),
       image: getThumbnail(post.content) ?? fallbackImage,
       url: post.url,
-      published: post.published
+      published: post.published,
     })) ?? [];
 
   return allPosts
     .sort(
       (left, right) =>
-        new Date(right.published).getTime() - new Date(left.published).getTime()
+        new Date(right.published).getTime() -
+        new Date(left.published).getTime(),
     )
     .slice(0, 3);
 });
@@ -169,7 +175,6 @@ const posts = computed<BlogCard[]>(() => {
           v-for="post in posts"
           :key="post.id"
           :href="post.url"
-          target="_blank"
           rel="noopener noreferrer"
           class="group overflow-hidden rounded-2xl border border-default bg-default shadow-sm transition hover:-translate-y-1 hover:shadow-xl"
         >
