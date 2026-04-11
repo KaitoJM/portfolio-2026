@@ -57,9 +57,7 @@ import WorkExperienceVue from "~/components/WorkExperience.vue";
           <WorkExperienceVue />
         </div>
         <div class="flex-1">
-          <p class="uppercase text-xs font-bold mb-4">Featured Project</p>
-          <FeaturedProject />
-          <p class="uppercase text-xs font-bold mb-4 mt-8">
+          <p class="uppercase text-xs font-bold mb-4">
             Projects Collaborated<br />
             Through the Years
           </p>
