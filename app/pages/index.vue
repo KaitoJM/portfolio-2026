@@ -45,6 +45,8 @@ import WorkExperienceVue from "~/components/WorkExperience.vue";
       </template>
     </UPageHero>
 
+    <BlogsSection />
+
     <UPageSection>
       <div class="flex flex-col md:flex-row gap-8">
         <div class="w-full md:w-1/4">
@@ -65,8 +67,6 @@ import WorkExperienceVue from "~/components/WorkExperience.vue";
         </div>
       </div>
     </UPageSection>
-
-    <BlogsSection />
 
     <UPageSection>
       <template #header>
