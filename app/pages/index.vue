@@ -13,9 +13,34 @@ import WorkExperienceVue from "~/components/WorkExperience.vue";
         <h1 class="font-bold text-3xl mt-4">Hi! I'm John</h1>
       </template>
       <template #body>
-        <p class="text-sm text-neutral-500">
-          A dedicated software engineer specializing in web development since
-          2015
+        <p class="text-lg text-neutral-600 mb-8">
+          I’m a full stack web developer who’s been building applications since
+          2015.
+        </p>
+        <p class="text-sm text-neutral-400 max-w-250 mx-auto">
+          Working across both frontend and backend technologies. Over the years,
+          I’ve had the opportunity to work on a wide range of projects—from
+          eCommerce platforms and internal business tools to APIs and scalable
+          web systems.
+          <br />
+          <br />
+          This site is where I document what I learn along the way. Instead of
+          just showcasing finished projects, I share the actual process behind
+          them—the decisions, the challenges, and the solutions that worked (and
+          sometimes didn’t). Most of the content here is based on real-world
+          experience, whether it’s working with Nuxt, Laravel, integrating APIs,
+          or exploring new tools and technologies.
+          <br />
+          <br />
+          You’ll find a mix of tutorials, technical deep dives, and practical
+          insights that are meant to be useful for other developers, especially
+          those building modern web applications. I also use this space to
+          explore ideas beyond the default limitations of tools—figuring out how
+          to extend, optimize, and make them work better in real scenarios.
+          <br />
+          <br />
+          If you’re into web development, building side projects, or just
+          curious about how things work under the hood, this blog is for you.
         </p>
       </template>
     </UPageHero>

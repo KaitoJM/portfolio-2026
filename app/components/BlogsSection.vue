@@ -191,7 +191,7 @@ const posts = computed<BlogCard[]>(() => {
             <h4 class="line-clamp-2 text-lg font-semibold">
               {{ post.title }}
             </h4>
-            <p class="line-clamp-3 text-sm text-muted">
+            <p class="text-sm text-muted">
               {{ post.description }}
             </p>
           </div>
