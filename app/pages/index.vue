@@ -127,6 +127,11 @@ import WorkExperienceVue from "~/components/WorkExperience.vue";
             class="w-40 h-30 object-contain bg-white p-2 rounded-lg"
             alt="vue"
           />
+          <img
+            src="/skills/shopify.png"
+            class="w-40 h-30 object-contain bg-white p-2 rounded-lg"
+            alt="vue"
+          />
         </div>
       </template>
     </UPageSection>
