@@ -64,5 +64,18 @@
         <UBadge label="NestJS" variant="outline" />
       </div>
     </UPageCard>
+    <UPageCard
+      title="Fritel Webshop"
+      description="Developed a custom Vue.js storefront integrated with Shopify’s Storefront GraphQL API, enabling dynamic product, cart, and checkout functionality, and seamlessly embedded into the company’s site builder platform after build."
+      orientation="vertical"
+      spotlight
+      spotlight-color="primary"
+    >
+      <img src="/fritel.png" alt="Tailwind CSS" class="rounded-lg w-full" />
+      <div class="flex flex-wrap gap-1 h-fit">
+        <UBadge label="Vue 3" variant="outline" />
+        <UBadge label="Shopify API" variant="outline" />
+      </div>
+    </UPageCard>
   </div>
 </template>

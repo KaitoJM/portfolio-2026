@@ -44,6 +44,12 @@ const items = ref<TimelineItem[]>([
       "Team Leader Software Engineer - Develop MultipayX API made from NestJS framework and mongoDB.",
     icon: "i-lucide-code",
   },
+  {
+    date: "January 2026",
+    title: "UpToDate Webdesign",
+    description: "Software Engineer | API Integration Specialist",
+    icon: "i-lucide-code",
+  },
 ]);
 </script>
 
